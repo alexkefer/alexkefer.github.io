@@ -1,7 +1,13 @@
 import Layout from "../Layout";
 import {FaLinkedin, FaGithub, FaTwitter} from "react-icons/fa";
+import {useEffect} from "react";
 
 export default function Contact() {
+
+    useEffect(() => {
+        document.title = 'Alex Kefer - Contact';
+    }, []);
+
     return (
         <Layout>
             <div className={'flex flex-row gap-6'}>

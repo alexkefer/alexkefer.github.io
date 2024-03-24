@@ -1,6 +1,10 @@
 import Layout from "../Layout";
+import {useEffect} from "react";
 
 const ErrorPage = () => {
+    useEffect(() => {
+        document.title = 'Alex Kefer - 404';
+    }, []);
     return (
         <Layout>
             <div className={'flex-grow justify-center'}>

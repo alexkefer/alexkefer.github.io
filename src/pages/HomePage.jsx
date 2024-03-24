@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Layout from "../Layout.jsx";
 import {Link} from "react-router-dom";
 import {FaFilePdf, FaGolang} from "react-icons/fa6";
@@ -34,6 +34,10 @@ const HomePage = () => {
     const togglePDF = () => {
         setIsPDFOpen(!isPDFOpen);
     }
+
+    useEffect(() => {
+        document.title = 'Alex Kefer';
+    }, []);
 
     return (
         <>

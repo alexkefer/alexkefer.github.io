@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import Layout from "../Layout";
 import {IoLogoJavascript} from "react-icons/io";
 import {SiAstro, SiC, SiCsharp, SiExpress, SiJest, SiTailwindcss, SiVite, SiMongodb} from "react-icons/si";
@@ -25,6 +25,9 @@ const About = () => {
     const togglePDF = () => {
         setIsPDFOpen(!isPDFOpen);
     }
+    useEffect(() => {
+        document.title = 'Alex Kefer - About';
+    }, []);
 
     return (
         <Layout>

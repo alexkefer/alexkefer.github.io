@@ -5,8 +5,14 @@ import {BsArrowRight} from "react-icons/bs";
 import {SiAstro, SiC, SiCsharp, SiJavascript, SiVite} from "react-icons/si";
 import {FaGolang, FaUnity} from "react-icons/fa6";
 import {IoLogoJavascript} from "react-icons/io";
+import {useEffect} from "react";
 
 const Projects = () => {
+
+    useEffect(() => {
+        document.title = 'Alex Kefer - Projects';
+    }, []);
+
     return (
         <Layout>
             <div className={'flex flex-row gap-6'}>
