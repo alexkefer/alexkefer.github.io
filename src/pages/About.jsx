@@ -186,7 +186,7 @@ const About = () => {
                     <h2 className="text-2xl font-bold text-left text-white mt-5 my-4">Relevent Coursework</h2>
                     <ul className={'grid grid-cols-3 gap-2 text-lg text-center text-white'}>
                         <li className={'bg-black bg-opacity-15 rounded-xl p-2'}>Computer Systems I & II</li>
-                        <li className={'bg-black bg-opacity-15 rounded-xl p-2'}>Web scripting</li>
+                        <li className={'bg-black bg-opacity-15 rounded-xl p-2'}>Web Scripting</li>
                         <li className={'bg-black bg-opacity-15 rounded-xl p-2'}>Mobile Device Programming</li>
                         <li className={'bg-black bg-opacity-15 rounded-xl p-2'}>Database Systems</li>
                         <li className={'bg-black bg-opacity-15 rounded-xl p-2'}>Operating Systems</li>
@@ -207,8 +207,7 @@ const About = () => {
                         <img src={'./hobby1.JPG'} alt={'Skiing'}
                              className={'h-40 mb-4 object-cover rounded-xl drop-shadow-2xl'}/>
                         <p className={'text-lg text-center text-white max-w-xs'}>
-                            I enjoy the mountains, specifically skiing and hiking. I have been on skis since I before I
-                            could walk.
+                            I enjoy the mountains, specifically skiing and hiking. I have been on skis since I was a wee little lad and have been skiing ever since.
                         </p>
                     </li>
                     <li className={'bg-black bg-opacity-25 rounded-2xl p-2 flex flex-col hover:ring-4 transition'}>

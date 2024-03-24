@@ -60,7 +60,7 @@ const Projects = () => {
                             <FaReact/>
                         </dt>
                         <dd className={'text-left mb-5'}>
-                            <p className={'text-white text-lg'}>In React Native on JavaScript I developed a Calculator App alongside Jest test cases to check for edge cases that could fail the application.</p>
+                            <p className={'text-white text-lg'}>In React Native on JavaScript I developed a calculator alongside Jest test cases to check for edge cases that could fail the application.</p>
                         </dd>
                         <dt className={'flex flex-row justify-between text-left font-bold text-xl border-b-2 border-l-2 my-2 pl-2'}>Old Portfolio Website
                             <FaReact/>
@@ -82,7 +82,7 @@ const Projects = () => {
                         Portfolio Website</dt>
                     <dd className={'text-white text-lg max-w-sm mb-5'}>This is in continuous development as my portfolio and knowledge base grows.</dd>
                     <dt className={'flex flex-row justify-between text-xl font-bold text-white border-b-2 border-r-2 my-2 pr-2'}>
-                        <div className={'flex flex-row gap-2'}>
+                        <div className={'flex flex-row gap-1 mt-1'}>
                             <FaReact/>
                             <SiAstro className={'mt-0.5'}/>
                         </div>
@@ -93,12 +93,12 @@ const Projects = () => {
                         Nutrient Tracker</dt>
                     <dd className={'text-white text-lg max-w-sm mb-5'}>I am developing a react native mobile app nutrient tracker to track my daily intake of nutrients and calories.</dd>
                     <dt className={'flex flex-row justify-between text-xl font-bold text-white border-b-2 border-r-2 my-2 pr-2'}>
-                        <div className={'flex flex-row gap-2'}>
+                        <div className={'flex flex-row gap-1 mt-1'}>
                             <FaGolang/>
                             <IoLogoJavascript/>
                         </div>
                         P2P Web Cache</dt>
-                    <dd className={'text-white text-lg max-w-sm mb-5'}>For my senior project, I am developing a peer-to-peer web cache to store and retrieve data from other users using Golang for the backend, and a chrome extension for the front-end.</dd>
+                    <dd className={'text-white text-lg max-w-sm'}>For my senior project, I am developing a peer-to-peer web cache to store and retrieve data from other users using Golang for the backend, and a chrome extension for the front-end.</dd>
                 </dl>
             </div>
             </div>
