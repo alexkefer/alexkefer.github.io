@@ -34,7 +34,7 @@ const About = () => {
             <div className={'flex flex-row gap-6'}>
                 <div className={'flex flex-col gap-6'}>
                     <div
-                        className={'flex p-5 flex-col gap-5 rounded-2xl bg-black bg-opacity-15 hover:scale-[101%] hover:ring-2'}>
+                        className={'full-width-text-box'}>
                         <h1 className="text-3xl font-bold text-left text-white">About Me</h1>
                         <p className="text-lg text-left text-white">
                             Hi, I am Alex Kefer. I am a software engineer with a passion for web development.

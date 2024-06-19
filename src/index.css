@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animated-button {
+
+    /* Define the initial gradient (starting point) */
+    /* Replace #color1 and #color2 with your desired colors */
+    background-size: 200%;
+    background-position: 0 50%;
+}
+
+.animated-button:hover {
+    animation: animate-gradient 3s ease normal forwards;
+}
+
+@keyframes animate-gradient {
+    from { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    to { background-position: 0 50%; } /* Return to starting position */
+}
+
+.animated-background {
+    background-size: 300%;
+    background-position: 0 50%;
+
+    animation: animate-gradient 10s ease-in-out infinite;
+}
+
+@layer components {
+    .full-width-text-box {
+        @apply flex p-5 flex-col gap-5 rounded-3xl bg-black bg-opacity-15 transition hover:ring-2;
+    }
+    .title {
+        @apply text-3xl font-bold text-left text-white;
+    }
+    p {
+        @apply text-lg text-left text-white;
+    }
+    .gradient-button {
+        @apply animated-button transition p-2 bg-gradient-to-tl from-violet-600 via-blue-600 to-green-600 text-left text-white hover:scale-105 hover:underline rounded-2xl drop-shadow-2xl hover:ring-4 font-semibold;
+    }
+    row-icon {
+        @apply flex-row flex gap-1.5;
+    }
+}

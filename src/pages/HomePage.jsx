@@ -16,17 +16,9 @@ import {
     FaReact, FaWindows
 } from "react-icons/fa";
 import PDFViewer from "../components/PDFViewer.jsx";
-import { pdfjs } from 'react-pdf';
 import {IoLogoJavascript} from "react-icons/io";
 import {SiAstro, SiC, SiCsharp, SiExpress, SiJest, SiMongodb, SiTailwindcss, SiVite} from "react-icons/si";
 import {TbBrandMysql} from "react-icons/tb";
-import './HomePage.css';
-
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.js',
-    import.meta.url,
-).toString();
 
 const HomePage = () => {
     const [isPDFOpen, setIsPDFOpen] = useState(false);
@@ -43,22 +35,22 @@ const HomePage = () => {
         <>
             <Layout>
                 <div className={'flex flex-col gap-6'}>
-                <img src={'./bearValley.JPG'} alt="Photo captured at Bear Valley, California by Alex Kefer"
-                     className={'flex-auto rounded-3xl hover:scale-[101%] transition duration-300  drop-shadow-2xl hover:ring-4'}/>
-                <div className={'flex p-5 flex-col gap-5 rounded-3xl bg-black bg-opacity-15 hover:scale-[101%] hover:ring-2'}>
-                    <h1 className="text-3xl font-bold text-left text-white">About Me</h1>
-                    <p className="text-lg text-left text-white">
+                <img src={'./bearValley.JPG'} alt=" A gorgeous winter scene of snow-capped mountains and pine trees in Bear Valley, California. The sky is bright blue and the sun is shining. The trees are bare, but the snow-covered ground is pristine."
+                     className={'flex-auto rounded-3xl transition duration-300  drop-shadow-2xl'}/>
+                <div className={'full-width-text-box'}>
+                    <h1 className="title">About Me</h1>
+                    <p>
                         Hi, I am Alex Kefer. I am a software engineer with a passion for web development.
                         I will graduate from Western Washington University in the spring of 2024 with a Bachelors of Science in Computer Science and a certificate in Web Programming.
                         I am currently seeking entry-level software engineering positions.
                     </p>
                     <div className={'flex'}>
-                        <Link to="/about" className="transition p-2 bg-gradient-to-tl from-violet-600 via-blue-600 to-green-600 text-left text-white hover:scale-105 hover:underline rounded-2xl drop-shadow-2xl hover:ring-4 font-semibold animated-button">Learn more about me</Link>
+                        <Link to="/about" className="gradient-button">Learn more about me</Link>
                     </div>
                 </div>
-                    <div className={`p-5 flex-col gap-5 rounded-3xl bg-black bg-opacity-15 transition hover:ring-2`}>
+                    <div className={`full-width-text-box`}>
                         <div className={'flex flex-row justify-between'}>
-                            <h1 className="text-3xl mt-1 font-bold text-left text-white">Resume</h1>
+                            <h1 className="title">Resume</h1>
                             <div className={'flex flex-row gap-2'}>
                                 <a href={'./Alex_Kefer_Resume.pdf'} download={'Alex_Kefer_Resume.pdf'}
                                    className={'p-2 rounded-lg hover:bg-black hover:bg-opacity-25'}>
@@ -76,65 +68,65 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={'flex p-5 flex-col gap-5 rounded-3xl bg-black bg-opacity-15 hover:scale-[101%] transition hover:ring-2'}>
-                        <h1 className="text-3xl font-bold text-left text-white">Projects</h1>
-                        <p className="text-lg text-left text-white">
+                    <div className={'full-width-text-box'}>
+                        <h1 className="title">Projects</h1>
+                        <p>
                             I have worked on a variety of projects, ranging from web development to game development.
                             I am always looking for new projects to work on and new technologies to learn.
                         </p>
                         <div className={'flex'}>
                             <Link to="/projects"
-                                  className="animated-button transition p-2 bg-gradient-to-tl from-violet-600 via-blue-600 to-green-600 text-left text-white hover:scale-105 hover:underline rounded-2xl drop-shadow-2xl hover:ring-4 font-semibold">View my projects</Link>
+                                  className="gradient-button">View my projects</Link>
                     </div>
                 </div>
-                <div className={'flex p-5 flex-col gap-5 rounded-3xl bg-black bg-opacity-15 hover:scale-[101%] transition hover:ring-2'}>
-                    <h1 className="text-3xl font-bold text-left text-white">Skills</h1>
+                <div className={'full-width-text-box'}>
+                    <h1 className="title">Skills</h1>
                     <dl className={'text-lg text-left text-white'}>
                         <dt className={'font-semibold'}>Languages</dt>
                         <dd className={'flex flex-row gap-1'}>
-                            <div className={'flex-row flex gap-1.5'}><FaJava className={'mt-1'}/> Java,</div>
-                            <div className={'flex-row flex gap-1.5'}><IoLogoJavascript className={'mt-1'}/> JavaScript,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaGolang className={'mt-1'}/> Golang,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaPython className={'mt-1'}/> Python,</div>
-                            <div className={'flex-row flex gap-1.5'}><SiC className={'mt-1'}/> C,</div>
-                            <div className={'flex-row flex gap-1.5'}><SiCsharp className={'mt-1'}/> C#,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaHtml5 className={'mt-1'}/> HTML,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaCss3Alt className={'mt-1'}/> CSS</div>
+                            <row-icon><FaJava className={'mt-1'}/> Java,</row-icon>
+                            <row-icon><IoLogoJavascript className={'mt-1'}/> JavaScript,</row-icon>
+                            <row-icon><FaGolang className={'mt-1'}/> Golang,</row-icon>
+                            <row-icon><FaPython className={'mt-1'}/> Python,</row-icon>
+                            <row-icon><SiC className={'mt-1'}/> C,</row-icon>
+                            <row-icon><SiCsharp className={'mt-1'}/> C#,</row-icon>
+                            <row-icon><FaHtml5 className={'mt-1'}/> HTML,</row-icon>
+                            <row-icon><FaCss3Alt className={'mt-1'}/> CSS</row-icon>
                         </dd>
                         <dt className={'font-semibold'}>Frameworks</dt>
                         <dd className={'flex flex-row gap-1'}>
-                            <div className={'flex-row flex gap-1.5'}><FaReact className={'mt-1'}/> React,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaNodeJs className={'mt-1'}/> Node.js,</div>
-                            <div className={'flex-row flex gap-1.5'}><SiExpress className={'mt-1'}/> Express,</div>
-                            <div className={'flex-row flex gap-1.5'}><SiJest className={'mt-1'}/> Jest,</div>
-                            <div className={'flex-row flex gap-1.5'}><SiVite className={'mt-1'}/> Vite,</div>
-                            <div className={'flex-row flex gap-1.5'}><SiAstro className={'mt-1'}/> Astro,</div>
-                            <div className={'flex-row flex gap-1.5'}><SiTailwindcss className={'mt-1'}/> Tailwind CSS</div>
+                            <row-icon><FaReact className={'mt-1'}/> React,</row-icon>
+                            <row-icon><FaNodeJs className={'mt-1'}/> Node.js,</row-icon>
+                            <row-icon><SiExpress className={'mt-1'}/> Express,</row-icon>
+                            <row-icon><SiJest className={'mt-1'}/> Jest,</row-icon>
+                            <row-icon><SiVite className={'mt-1'}/> Vite,</row-icon>
+                            <row-icon><SiAstro className={'mt-1'}/> Astro,</row-icon>
+                            <row-icon><SiTailwindcss className={'mt-1'}/> Tailwind CSS</row-icon>
                         </dd>
                         <dt className={'font-semibold'}>Tools</dt>
                         <dd className={'flex flex-row gap-1'}>
-                            <div className={'flex-row flex gap-1.5'}><FaGitAlt className={'mt-1'}/> Git,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaGithub className={'mt-1'}/> GitHub,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaDocker className={'mt-1'}/> Docker,</div>
-                            <div className={'flex-row flex gap-1.5'}><TbBrandMysql className={'mt-1'}/> SQL,</div>
-                            <div className={'flex-row flex gap-1.5'}><SiMongodb className={'mt-1'}/> MongoDB,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaAws className={'mt-1'}/> AWS</div>
+                            <row-icon><FaGitAlt className={'mt-1'}/> Git,</row-icon>
+                            <row-icon><FaGithub className={'mt-1'}/> GitHub,</row-icon>
+                            <row-icon><FaDocker className={'mt-1'}/> Docker,</row-icon>
+                            <row-icon><TbBrandMysql className={'mt-1'}/> SQL,</row-icon>
+                            <row-icon><SiMongodb className={'mt-1'}/> MongoDB,</row-icon>
+                            <row-icon><FaAws className={'mt-1'}/> AWS</row-icon>
                         </dd>
                         <dt className={'font-semibold'}>Operating Systems</dt>
                         <dd className={'flex flex-row gap-1'}>
-                            <div className={'flex-row flex gap-1.5'}><FaLinux className={'mt-1'}/> Linux,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaWindows className={'mt-1'}/> Windows,</div>
-                            <div className={'flex-row flex gap-1.5'}><FaApple className={'mt-1'}/> Mac</div>
+                            <row-icon><FaLinux className={'mt-1'}/> Linux,</row-icon>
+                            <row-icon><FaWindows className={'mt-1'}/> Windows,</row-icon>
+                            <row-icon><FaApple className={'mt-1'}/> Mac</row-icon>
                         </dd>
                     </dl>
                 </div>
-                <div className={'flex p-5 flex-col gap-5 rounded-3xl bg-black bg-opacity-15 hover:scale-[101%] transition hover:ring-2'}>
-                    <h1 className="text-3xl font-bold text-left text-white">Contact</h1>
-                    <p className="text-lg text-left text-white">
+                <div className={'full-width-text-box'}>
+                    <h1 className="title">Contact</h1>
+                    <p>
                         I am always open to new opportunities and connections. Feel free to reach out to me.
                     </p>
                     <div className={'flex'}>
-                        <Link to="/contact" className="animated-button transition p-2 bg-gradient-to-tl from-violet-600 via-blue-600 to-green-600 text-left text-white hover:scale-105 hover:underline rounded-2xl drop-shadow-2xl hover:ring-4 font-semibold">Contact me</Link>
+                        <Link to="/contact" className="gradient-button">Contact me</Link>
                     </div>
                 </div>
                 </div>
