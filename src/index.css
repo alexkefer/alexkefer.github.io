@@ -29,7 +29,16 @@
 
 @layer components {
     .full-width-text-box {
-        @apply flex p-5 flex-col gap-5 rounded-3xl bg-black bg-opacity-15 transition hover:ring-2;
+        @apply flex p-5 flex-col gap-5 rounded-2xl bg-black bg-opacity-15 transition hover:ring-2;
+    }
+    .split-75 {
+        @apply w-[70%] flex flex-col gap-5;
+    }
+    .split-25 {
+        @apply w-[30%];
+    }
+    .split-75-25 {
+        @apply flex flex-row gap-5;
     }
     .title {
         @apply text-3xl font-bold text-left text-white;
@@ -42,5 +51,14 @@
     }
     row-icon {
         @apply flex-row flex gap-1.5;
+    }
+    .left-list-heading {
+        @apply text-left font-bold text-xl border-b-2 border-l-2 my-2 px-2;
+    }
+    .three-column {
+        @apply grid grid-cols-3 gap-2 text-lg text-center text-white;
+    }
+    .grid-item {
+        @apply bg-black bg-opacity-15 rounded-lg p-2;
     }
 }
