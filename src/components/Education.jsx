@@ -4,15 +4,11 @@ const Education = () => {
   return (
     <div className={"full-width-text-box my-5"}>
       <h1 className="title">Education</h1>
-      <dl className={"text-lg text-left text-white flex flex-col"}>
-        <dt
-          className={
-            "text-left font-bold text-xl border-b-2 border-l-2 my-2 px-2 mr-[50%]"
-          }
-        >
+      <dl>
+        <dt className={"left-list-heading"}>
           Bachelor of Science in Computer Science
         </dt>
-        <dd className={"text-left"}>
+        <dd>
           <LocationAndTime
             reference={"https://www.wwu.edu"}
             nameOfLink={"Western Washington University"}
@@ -22,14 +18,8 @@ const Education = () => {
             <li>Graduated June 2024</li>
           </ul>
         </dd>
-        <dt
-          className={
-            "text-left font-bold text-xl border-b-2 border-l-2 my-2 px-2 mr-[50%]"
-          }
-        >
-          Certificate in Web Programming
-        </dt>
-        <dd className={"text-left"}>
+        <dt className={"left-list-heading"}>Certificate in Web Programming</dt>
+        <dd>
           <LocationAndTime
             reference={"https://www.wwu.edu"}
             nameOfLink={"Western Washington University"}

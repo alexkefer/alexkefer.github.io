@@ -31,6 +31,7 @@ import {
 import { TbBrandMysql } from "react-icons/tb";
 import AboutMe from "../components/AboutMe.jsx";
 import PDFSection from "../components/PDFSection.jsx";
+import CustomImage from "../components/CustomImage.jsx";
 
 const HomePage = () => {
   const [isPDFOpen, setIsPDFOpen] = useState(false);
@@ -47,12 +48,12 @@ const HomePage = () => {
     <>
       <Layout>
         <div className={"flex flex-col gap-6"}>
-          <img
+          <CustomImage
             src={"./bearValley.JPG"}
-            alt=" A gorgeous winter scene of snow-capped mountains and pine trees in Bear Valley, California. The sky is bright blue and the sun is shining. The trees are bare, but the snow-covered ground is pristine."
-            className={
-              "flex-auto rounded-3xl transition duration-300  drop-shadow-2xl"
+            alt={
+              "A gorgeous winter scene of snow-capped mountains and pine trees in Bear Valley, California. The sky is bright blue and the sun is shining. The trees are bare, but the snow-covered ground is pristine."
             }
+            displayType={"full"}
           />
           <AboutMe hasLink={true} />
           <PDFSection />

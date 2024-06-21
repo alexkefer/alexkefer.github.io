@@ -14,12 +14,12 @@ const About = () => {
 
   return (
     <Layout>
-      <div className={"split-75-25"}>
-        <div className={"split-75"}>
+      <div className={"split-70-30"}>
+        <div className={"split-70"}>
           <AboutMe hasLink={false} />
           <Experience />
         </div>
-        <SkillsSidebar />
+        <SkillsSidebar className={"split-30"} />
       </div>
       <Education />
       <Hobbies />

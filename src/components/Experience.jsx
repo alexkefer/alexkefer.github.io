@@ -4,9 +4,23 @@ const Experience = () => {
   return (
     <div className={"full-width-text-box"}>
       <h1 className="title">Experience</h1>
-      <dl className={"text-lg text-left text-white flex flex-col"}>
+      <dl>
+        <dt className={"left-list-heading"}>Bartender</dt>
+        <dd>
+          <LocationAndTime
+            reference={"https://btownkitchen.com"}
+            nameOfLink={"B-Town @ Four Points Sheraton"}
+            dates={"January 2024 - Present"}
+          />
+          <ul className={"pl-8 list-disc list-outside"}>
+            <li>Provided exceptional customer service to patrons</li>
+            <li>
+              Developed a strong understanding of mixology and drink preparation
+            </li>
+          </ul>
+        </dd>
         <dt className={"left-list-heading"}>Web Developer 3</dt>
-        <dd className={"text-left"}>
+        <dd>
           <LocationAndTime
             reference={"https://www.wwu.edu"}
             nameOfLink={"Western Washington University"}
@@ -28,7 +42,7 @@ const Experience = () => {
           </ul>
         </dd>
         <dt className={"left-list-heading"}>Web Accessibility Intern</dt>
-        <dd className={"text-left"}>
+        <dd>
           <LocationAndTime
             reference={"https://www.wwu.edu"}
             nameOfLink={"Western Washington University"}
@@ -50,20 +64,6 @@ const Experience = () => {
                   information for improved results
                 </li>
               </ul>
-            </li>
-          </ul>
-        </dd>
-        <dt className={"left-list-heading"}>Bartender</dt>
-        <dd className={"text-left"}>
-          <LocationAndTime
-            reference={"https://btownkitchen.com"}
-            nameOfLink={"B-Town @ Four Points Sheraton"}
-            dates={"January 2024 - Present"}
-          />
-          <ul className={"pl-8 list-disc list-outside"}>
-            <li>Provided exceptional customer service to patrons</li>
-            <li>
-              Developed a strong understanding of mixology and drink preparation
             </li>
           </ul>
         </dd>
