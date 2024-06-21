@@ -18,11 +18,13 @@ const CustomImage = ({ src, alt, displayType }) => {
     );
   } else if (displayType === "contact") {
     return (
-      <img
-        src={src}
-        alt={alt}
-        className={"w-48 rounded-xl transition drop-shadow-2xl hover:ring-4"}
-      />
+      <div
+        className={
+          "relative overflow-hidden w-full rounded-lg transition drop-shadow-2xl hover:ring-4"
+        }
+      >
+        <img src={src} alt={alt} className={"w-full h-full object-contain"} />
+      </div>
     );
   } else if (displayType === "logo") {
     return <img src={src} alt={alt} className={"text-4xl"} />;

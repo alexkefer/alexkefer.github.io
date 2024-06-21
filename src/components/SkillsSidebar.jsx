@@ -30,7 +30,7 @@ import { TbBrandMysql } from "react-icons/tb";
 
 const SkillsSidebar = () => {
   return (
-    <aside className={"split-25"}>
+    <aside>
       <div className={"full-width-text-box"}>
         <h1 className="title text-right">Skills</h1>
         <dl>

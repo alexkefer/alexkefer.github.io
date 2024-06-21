@@ -10,9 +10,13 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className={"split-60-40"}>
-        <ContactMe />
-        <SocialMediaSidebar />
+      <div className={"split-75-25"}>
+        <div className={"split-75"}>
+          <ContactMe />
+        </div>
+        <div className={"split-25"}>
+          <SocialMediaSidebar />
+        </div>
       </div>
     </Layout>
   );

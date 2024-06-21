@@ -6,6 +6,7 @@ import Experience from "../components/Experience";
 import Education from "../components/Education";
 import Hobbies from "../components/Hobbies.jsx";
 import SkillsSidebar from "../components/SkillsSidebar.jsx";
+import SocialMediaSidebar from "../components/SocialMediaSidebar.jsx";
 
 const About = () => {
   useEffect(() => {
@@ -19,7 +20,10 @@ const About = () => {
           <AboutMe hasLink={false} />
           <Experience />
         </div>
-        <SkillsSidebar className={"split-30"} />
+        <div className={"split-30 flex-col justify-between"}>
+          <SkillsSidebar />
+          <SocialMediaSidebar />
+        </div>
       </div>
       <Education />
       <Hobbies />
