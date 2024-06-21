@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Layout from "../Layout";
 import AboutMe from "../components/AboutMe";
 import PDFSection from "../components/PDFSection.jsx";
