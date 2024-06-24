@@ -65,7 +65,7 @@
         @apply text-lg text-left text-white;
     }
     .gradient-button {
-        @apply animated-button transition p-2 bg-gradient-to-tl from-violet-600 via-blue-600 to-green-600 text-left text-white hover:scale-105 hover:underline rounded-2xl drop-shadow-2xl hover:ring-4 font-semibold;
+        @apply animated-button transition p-2 bg-gradient-to-tl from-violet-600 via-blue-600 to-green-600 text-left text-white hover:scale-105 hover:underline rounded-xl drop-shadow-2xl hover:ring-4 font-semibold;
     }
     row-icon {
         @apply flex-row flex gap-1.5;

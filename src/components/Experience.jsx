@@ -32,7 +32,7 @@ const Experience = () => {
               web application.
             </li>
             <li>
-              Developed a accessible and friendly user interface utilizing the
+              Developed an accessible and friendly user interface utilizing the
               schools styling guide.
             </li>
             <li>

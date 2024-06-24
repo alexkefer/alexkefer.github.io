@@ -1,6 +1,6 @@
-import { FaReact } from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 import { SiAstro, SiVite } from "react-icons/si";
-import { FaGolang } from "react-icons/fa6";
+import { FaGolang, FaR } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
 
 const ProjectsInDevelopment = () => {
@@ -17,38 +17,47 @@ const ProjectsInDevelopment = () => {
         </dt>
         <dd>
           This is in continuous development as my portfolio and knowledge base
-          grows.
-        </dd>
-        <dt className={"right-list-heading"}>
-          DATG
-          <div className={"icon-row"}>
-            <FaReact />
-            <SiAstro className={"mt-0.5"} />
-          </div>
-        </dt>
-        <dd>
-          With a team I am developing an alt-text generator for images using
-          React and Astro to generate alt-text for images.
+          grows. I am always looking for ways to improve the user experience and
+          add new features.
         </dd>
         <dt className={"right-list-heading"}>
           Nutrient Tracker
           <FaReact />
         </dt>
         <dd>
-          I am developing a react native mobile app nutrient tracker to track my
-          daily intake of nutrients and calories.
+          Developing a React Native mobile app to track daily nutrient and
+          calorie intake. The app will allow users to input their meals and view
+          a summary of their daily intake. Future plans include adding a
+          database to store user data and provide insights into their eating
+          habits.
         </dd>
         <dt className={"right-list-heading"}>
-          P2P Web Cache
+          Web Weasel 2
           <div className={"icon-row"}>
             <FaGolang />
             <IoLogoJavascript />
+            <FaReact />
           </div>
         </dt>
         <dd>
-          For my senior project, I am developing a peer-to-peer web cache to
-          store and retrieve data from other users using Golang for the backend,
-          and a chrome extension for the front-end.
+          Currently developing a new version of Web Weasel to enhance efficiency
+          and user-friendliness. Identified a major flaw in the original design
+          and are addressing it by rebuilding the application using the Wails
+          framework.
+        </dd>
+        <dt className={"right-list-heading"}>
+          Bartender App
+          <div className={"icon-row"}>
+            <FaReact />
+            <FaNodeJs />
+          </div>
+        </dt>
+        <dd>
+          Currently in the planning stage of an application that will enable
+          users to browse a selection of drinks and cocktails, view recipes, and
+          save their favorites. Future plans include allowing users to share
+          their own recipes and rate others' recipes, fostering a community to
+          enhance cocktail-making skills.
         </dd>
       </dl>
     </aside>
