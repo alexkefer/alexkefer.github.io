@@ -9,9 +9,6 @@ const CompletedProjects = () => {
     <div className={"full-width-text-box split-70"}>
       <div className={"flex-row flex gap-2"}>
         <h1 className="title">Completed Projects</h1>
-        <p className={"text-sm mt-0.5"}>
-          * In order of most recently completed
-        </p>
       </div>
       <dl>
         <dt className={"left-list-heading"}>
