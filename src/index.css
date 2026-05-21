@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.animated-button {
-  /* Define the initial gradient (starting point) */
-  /* Replace #color1 and #color2 with your desired colors */
-  background-size: 200%;
-  background-position: 0 50%;
-}
-
-.animated-button:hover {
-  animation: animate-gradient 3s ease normal forwards;
-}
-
 @keyframes animate-gradient {
   from {
     background-position: 0 50%;
@@ -22,13 +11,12 @@
   }
   to {
     background-position: 0 50%;
-  } /* Return to starting position */
+  }
 }
 
 .animated-background {
   background-size: 300%;
   background-position: 0 50%;
-
   animation: animate-gradient 10s ease-in-out infinite;
 }
 
@@ -36,42 +24,47 @@
   .full-width-text-box {
     @apply flex p-5 flex-col gap-5 rounded-2xl bg-black bg-opacity-15 transition hover:ring-2;
   }
-  .split-70 {
-    @apply w-[70%] flex flex-col gap-5;
-  }
-  .split-30 {
-    @apply w-[30%] flex flex-col gap-5;
-  }
+
+  /* ── Two-column split layouts ─────────────────────────────────────────────
+     Stack to a single column on mobile (< md = 768px).                      */
   .split-70-30 {
-    @apply flex flex-row gap-5;
+    @apply flex flex-row gap-5 max-md:flex-col;
   }
   .split-60-40 {
-    @apply flex flex-row gap-5;
+    @apply flex flex-row gap-5 max-md:flex-col;
   }
   .split-75-25 {
-    @apply flex flex-row gap-5;
+    @apply flex flex-row gap-5 max-md:flex-col;
+  }
+
+  /* ── Column widths ────────────────────────────────────────────────────────
+     Full-width on mobile; percentage-based on md+.                          */
+  .split-70 {
+    @apply w-[70%] flex flex-col gap-5 max-md:w-full;
+  }
+  .split-30 {
+    @apply w-[30%] flex flex-col gap-5 max-md:w-full;
   }
   .split-60 {
-    @apply w-[60%] flex flex-col gap-5;
+    @apply w-[60%] flex flex-col gap-5 max-md:w-full;
   }
   .split-40 {
-    @apply w-[40%] flex flex-col gap-5;
+    @apply w-[40%] flex flex-col gap-5 max-md:w-full;
   }
   .split-75 {
-    @apply w-[75%] flex flex-col gap-5;
+    @apply w-[75%] flex flex-col gap-5 max-md:w-full;
   }
   .split-25 {
-    @apply w-[25%] flex flex-col gap-5;
+    @apply w-[25%] flex flex-col gap-5 max-md:w-full;
   }
+
   .title {
     @apply text-3xl font-bold text-left text-white;
   }
   p {
     @apply text-lg text-left text-white;
   }
-  .gradient-button {
-    @apply animated-button transition p-2 bg-gradient-to-tl from-violet-800 to-blue-800 border-l-2 border-b-2 rounded-tr-xl text-left hover:underline drop-shadow-2xl hover:ring-1 font-semibold;
-  }
+
   row-icon {
     @apply flex-row flex gap-1.5;
   }
@@ -81,12 +74,16 @@
   .right-list-heading {
     @apply text-right font-bold text-xl border-b-2 border-r-2 my-2 px-1 justify-between flex flex-row-reverse;
   }
+
+  /* ── Grids ────────────────────────────────────────────────────────────────
+     3 cols on md+, 2 cols on sm, 1 col on xs.                               */
   .three-column {
-    @apply grid grid-cols-3 gap-2 text-lg text-center text-white;
+    @apply grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 text-lg text-center text-white;
   }
   .grid-item {
     @apply bg-black bg-opacity-15 rounded-lg p-2;
   }
+
   dd {
     @apply mb-5 flex flex-col gap-2;
   }

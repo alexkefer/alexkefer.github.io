@@ -3,6 +3,7 @@ import { SiAstro, SiC, SiCsharp } from "react-icons/si";
 import { FaGolang, FaUnity } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoOpenOutline } from "react-icons/io5";
+import Button from "./Button.jsx";
 
 const CompletedProjects = () => {
   return (
@@ -37,14 +38,14 @@ const CompletedProjects = () => {
               website.
             </li>
           </ul>
-          <a
-            className={"gradient-button flex-row flex max-w-max gap-1 mt-2"}
+          <Button
             href={"https://github.com/alexkefer/Web-Weasel"}
             target={"_blank"}
+            rel="noreferrer"
+            className={"mt-2 text-sm"}
           >
-            <p className={"text-sm"}>View Project on GitHub</p>
-            <IoOpenOutline className={"mt-0.5 text-sm"} />
-          </a>
+            View Project on GitHub <IoOpenOutline />
+          </Button>
         </dd>
         <dt className={"left-list-heading"}>
           DATG
@@ -62,24 +63,24 @@ const CompletedProjects = () => {
           integrated WWU's styling template, Ashlar, to ensure consistent
           theming with the university's online materials.
           <div className={"flex gap-4 mt-2"}>
-            <a
-              className={"gradient-button flex-row flex max-w-max gap-1"}
+            <Button
               href={"https://datg.wwu.edu/"}
               target={"_blank"}
+              rel="noreferrer"
+              className={"text-sm"}
             >
-              <p className={"text-sm"}>View Application</p>
-              <IoOpenOutline className={"mt-0.5 text-sm"} />
-            </a>
-            <a
-              className={"gradient-button flex-row flex max-w-max gap-1"}
+              View Application <IoOpenOutline />
+            </Button>
+            <Button
               href={
                 "https://github.com/wwu-webtech/descriptive-alt-text-generator"
               }
               target={"_blank"}
+              rel="noreferrer"
+              className={"text-sm"}
             >
-              <p className={"text-sm"}>View Project on GitHub</p>
-              <IoOpenOutline className={"mt-0.5 text-sm"} />
-            </a>
+              View Project on GitHub <IoOpenOutline />
+            </Button>
           </div>
         </dd>
         <dt className={"left-list-heading"}>

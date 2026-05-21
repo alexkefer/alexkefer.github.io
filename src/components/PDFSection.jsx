@@ -3,11 +3,17 @@ import { FaFilePdf } from "react-icons/fa6";
 import { useState } from "react";
 import PDFViewer from "./PDFViewer.jsx";
 
+const isMobile = () => window.matchMedia("(max-width: 767px)").matches;
+
 const PDFSection = () => {
   const [isPDFOpen, setIsPDFOpen] = useState(false);
 
-  const togglePDF = () => {
-    setIsPDFOpen(!isPDFOpen);
+  const handlePDFClick = () => {
+    if (isMobile()) {
+      window.open("./Alex_Kefer_Resume.pdf", "_blank", "noreferrer");
+    } else {
+      setIsPDFOpen(!isPDFOpen);
+    }
   };
   return (
     <div className={`full-width-text-box`}>
@@ -28,7 +34,7 @@ const PDFSection = () => {
           >
             <FaFilePdf
               className={"fill-white h-8 w-8 drop-shadow-xl"}
-              onClick={togglePDF}
+              onClick={handlePDFClick}
             />
           </div>
         </div>

@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Layout from "../Layout";
 import AboutMe from "../components/AboutMe";
 import PDFSection from "../components/PDFSection.jsx";
 import Experience from "../components/Experience";
@@ -14,7 +13,7 @@ const About = () => {
   }, []);
 
   return (
-    <Layout>
+    <div className="flex flex-col gap-5">
       <div className={"split-70-30"}>
         <div className={"split-70"}>
           <AboutMe hasLink={false} />
@@ -28,7 +27,7 @@ const About = () => {
       <Education />
       <Hobbies />
       <PDFSection />
-    </Layout>
+    </div>
   );
 };
 

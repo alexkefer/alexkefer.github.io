@@ -1,4 +1,5 @@
 import CustomImage from "./CustomImage.jsx";
+import Button from "./Button.jsx";
 
 const ContactMe = () => {
   return (
@@ -20,12 +21,7 @@ const ContactMe = () => {
             excited to hear from you and discuss any opportunities.
           </p>
           <div className={"flex gap-2"}>
-            <a
-              href={"mailto:alexkefer@icloud.com"}
-              className={"gradient-button"}
-            >
-              Email Me
-            </a>
+            <Button href={"mailto:alexkefer@icloud.com"}>Email Me</Button>
           </div>
         </div>
       </aside>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Button from "./Button";
 
 // eslint-disable-next-line react/prop-types
 const AboutMe = ({ hasLink }) => {
@@ -14,9 +14,7 @@ const AboutMe = ({ hasLink }) => {
       </p>
       {hasLink && (
         <div className={"flex"}>
-          <Link to="/about" className="gradient-button">
-            Learn more about me
-          </Link>
+          <Button to="/about">Learn more about me</Button>
         </div>
       )}
     </div>
