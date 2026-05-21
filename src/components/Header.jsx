@@ -43,7 +43,7 @@ export default function Header() {
       <div className="flex-auto my-auto text-3xl font-bold text-violet-100">
         <NavLink
           to="/"
-          className="px-2 py-1 rounded-t-2xl hover:border-b-4 transition"
+          className="px-2 rounded-t-2xl hover:border-b-4 transition"
           onClick={() => setMenuOpen(false)}
         >
           Alex Kefer
