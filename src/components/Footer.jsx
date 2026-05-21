@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="flex-auto my-auto text-3xl font-bold text-violet-100">
         <div className="flex flex-col gap-1 mt-1 float-left text-lg font-bold tracking-wide uppercase text-violet-100 py-4 max-md:flex-wrap max-md:max-w-full">
           <p>Designed and Built by Alex Kefer</p>
-          <p className={"text-sm font-normal"}>© 2024 Alex Kefer</p>
+          <p className={"text-sm font-normal"}>© 2026 Alex Kefer</p>
         </div>
         <div className="flex gap-10 float-right text-2xl font-bold tracking-wide uppercase text-violet-100 py-4 max-md:flex-wrap max-md:max-w-full">
           <a
